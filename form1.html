@@ -5,176 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludo | Gopi Chandra</title>
-    <style type="text/css">
-        .st0 {
-            fill: #0f0;
-            stroke: #000;
-            stroke-width: 5;
-            stroke-miterlimit: 10;
+    <title>Form For SMPS</title>
+    <style>
+        body {
+            font-family: ubuntu;
         }
 
-        .st1 {
-            fill: #f00;
-            stroke: #000;
-            stroke-width: 5;
-            stroke-miterlimit: 10;
+        fieldset {
+            width: 700px;
+            padding: 20px;
+            border: 5px solid;
+            background-color: antiquewhite;
+            border-radius: 20px;
         }
 
-        .st2 {
-            fill: #00f;
-            stroke: #000;
-            stroke-width: 5;
-            stroke-miterlimit: 10;
+        fieldset>legend {
+            font-size: 30px;
+            background-color: #000;
+            border-radius: 25px;
+            color: #fff;
+            padding: 3px 15px;
         }
 
-        .st3 {
-            fill: #ff0;
-            stroke: #000;
-            stroke-width: 5;
-            stroke-miterlimit: 10;
+        .form_row {
+            padding: 10px;
+            width: 100%;
+            /* display: flex; */
+            /* justify-content: space-between; */
+            align-items: center;
+            align-content: center;
         }
 
-        .st4 {
-            fill: none;
-            stroke: #000;
-            stroke-width: 5;
-            stroke-miterlimit: 10;
+        .form_row>label {
+            font-size: larger;
         }
 
-        .st5 {
-            fill: #fff;
-            stroke: #f00;
-            stroke-width: 100;
-            stroke-miterlimit: 10;
+        select,
+        .form_row>.input_fill {
+            border: 2.5px solid grey;
+            padding: 3px 10px;
+            border-radius: 10px;
+            width: 30%;
+            margin-left: 20px;
         }
 
-        .st6 {
-            fill: #fff;
-            stroke: #00f;
-            stroke-width: 100;
-            stroke-miterlimit: 10;
+        .form_row>.input_button {
+            border: 2.5px solid grey;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 20px;
+
         }
 
-        .st7 {
-            fill: #fff;
-            stroke: #ff0;
-            stroke-width: 100;
-            stroke-miterlimit: 10;
-        }
-
-        .st8 {
-            fill: #fff;
-            stroke: #0f0;
-            stroke-width: 100;
-            stroke-miterlimit: 10;
+        .form_row>.input_radio {
+            height: 13px;
+            width: 13px;
         }
     </style>
 </head>
 
 <body>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px" y="0px" viewBox="0 0 1500 1500" style="enable-background:new 0 0 1500 1500;" xml:space="preserve">
-
-        <g>
-            <g>
-                <rect x="800" y="100" class="st0" width="100" height="100" />
-                <rect x="1200" y="600" class="st0" width="100" height="100" />
-                <rect x="700" y="100" class="st0" width="100" height="500" />
-            </g>
-            <g>
-                <rect x="100" y="600" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -500 800)" class="st1"
-                    width="100" height="100" />
-                <rect x="600" y="200" transform="matrix(6.123234e-17 -1 1 6.123234e-17 400 900)" class="st1" width="100"
-                    height="100" />
-                <rect x="300" y="500" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -400 1100)" class="st1"
-                    width="100" height="500" />
-            </g>
-            <g>
-
-                <rect x="600" y="1300" transform="matrix(-1 3.267949e-07 -3.267949e-07 -1 1300.0006 2699.9998)"
-                    class="st2" width="100" height="100" />
-
-                <rect x="200" y="800" transform="matrix(-1 3.267949e-07 -3.267949e-07 -1 500.0001 1700)" class="st2"
-                    width="100" height="100" />
-
-                <rect x="700" y="900" transform="matrix(-1 3.267949e-07 -3.267949e-07 -1 1500.0005 2299.9995)"
-                    class="st2" width="100" height="500" />
-            </g>
-            <g>
-                <rect x="1300" y="800" transform="matrix(-1.961531e-08 1 -1 -1.961531e-08 2200 -500)" class="st3"
-                    width="100" height="100" />
-                <rect x="800" y="1200" transform="matrix(-1.961531e-08 1 -1 -1.961531e-08 2100 400)" class="st3"
-                    width="100" height="100" />
-                <rect x="1100" y="500" transform="matrix(-1.961533e-08 1 -1 -1.961533e-08 1900 -400)" class="st3"
-                    width="100" height="500" />
-            </g>
-            <line class="st4" x1="897.5" y1="602.5" x2="602.5" y2="897.5" />
-            <line class="st4" x1="897.5" y1="897.5" x2="602.5" y2="602.5" />
-            <line class="st4" x1="0" y1="600" x2="1500" y2="600" />
-            <line class="st4" x1="0" y1="700" x2="1500" y2="700" />
-            <line class="st4" x1="0" y1="900" x2="1500" y2="900" />
-            <line class="st4" x1="0" y1="800" x2="1500" y2="800" />
-            <line class="st4" x1="700" y1="1500" x2="700" y2="0" />
-            <line class="st4" x1="800" y1="1500" x2="800" y2="0" />
-            <line class="st4" x1="900" y1="1500" x2="900" y2="0" />
-            <line class="st4" x1="600" y1="1500" x2="600" y2="0" />
-            <line class="st4" x1="600" y1="1000" x2="900.77" y2="1000" />
-            <line class="st4" x1="600" y1="1200" x2="900.77" y2="1200" />
-            <line class="st4" x1="600" y1="1300" x2="900.77" y2="1300" />
-            <line class="st4" x1="600" y1="1400" x2="900.77" y2="1400" />
-            <line class="st4" x1="600" y1="1100" x2="900.77" y2="1100" />
-            <line class="st4" x1="1000" y1="900" x2="1000" y2="600" />
-            <line class="st4" x1="1200" y1="900" x2="1200" y2="600" />
-            <line class="st4" x1="1300" y1="900" x2="1300" y2="600" />
-            <line class="st4" x1="1400" y1="900" x2="1400" y2="600" />
-            <line class="st4" x1="1100" y1="900" x2="1100" y2="600" />
-            <line class="st4" x1="100" y1="900" x2="100" y2="600" />
-            <line class="st4" x1="300" y1="900" x2="300" y2="600" />
-            <line class="st4" x1="400" y1="900" x2="400" y2="600" />
-            <line class="st4" x1="500" y1="900" x2="500" y2="600" />
-            <line class="st4" x1="200" y1="900" x2="200" y2="600" />
-            <line class="st4" x1="600" y1="100" x2="900" y2="100" />
-            <line class="st4" x1="600" y1="300" x2="900" y2="300" />
-            <line class="st4" x1="600" y1="400" x2="900" y2="400" />
-            <line class="st4" x1="600" y1="500" x2="900" y2="500" />
-            <line class="st4" x1="600" y1="200" x2="900" y2="200" />
-            <rect class="st4" width="1500" height="1500" />
-            <polygon class="st0" points="750,750 900,600 600,600" />
-            <polygon class="st1" points="600,600 600,900 750,750" />
-            <polygon class="st2" points="750,750 600,900 900,900" />
-            <polygon class="st3" points="750,750 900,900 900,600" />
-            <g>
-                <rect x="52.5" y="52.5" class="st5" width="495" height="495" />
-                <circle class="st5" cx="215.21" cy="215.21" r="7.5" />
-                <circle class="st5" cx="385" cy="385" r="7.5" />
-                <circle class="st5" cx="215" cy="385" r="7.5" />
-                <circle class="st5" cx="385" cy="215" r="7.5" />
-            </g>
-            <g>
-                <rect x="52.5" y="952.5" class="st6" width="495" height="495" />
-                <circle class="st6" cx="215.21" cy="1115.21" r="7.5" />
-                <circle class="st6" cx="385" cy="1285" r="7.5" />
-                <circle class="st6" cx="215" cy="1285" r="7.5" />
-                <circle class="st6" cx="385" cy="1115" r="7.5" />
-            </g>
-            <g>
-                <rect x="952.5" y="952.5" class="st7" width="495" height="495" />
-                <circle class="st7" cx="1115.21" cy="1115.21" r="7.5" />
-                <circle class="st7" cx="1285" cy="1285" r="7.5" />
-                <circle class="st7" cx="1115" cy="1285" r="7.5" />
-                <circle class="st7" cx="1285" cy="1115" r="7.5" />
-            </g>
-            <g>
-                <rect x="952.5" y="52.5" class="st8" width="495" height="495" />
-                <circle class="st8" cx="1115.21" cy="215.21" r="7.5" />
-                <circle class="st8" cx="1285" cy="385" r="7.5" />
-                <circle class="st8" cx="1115" cy="385" r="7.5" />
-                <circle class="st8" cx="1285" cy="215" r="7.5" />
-            </g>
-        </g>
-    </svg>
-
+    <div>
+        <form>
+            <fieldset>
+                <legend>Summer traininng form | SMPS</legend>
+                <div class="form_row">
+                    <label for="student_name">Student Name : </label>
+                    <input type="text" class="input_fill" name="fname" placeholder="First Name" required />
+                    <input type="text" class="input_fill" name="lname" placeholder="Last Name" required />
+                </div>
+                <div class="form_row">
+                    <label for="father_name">Father's Name : </label>
+                    <input type="text" class="input_fill" name="fname" placeholder="First Name" required />
+                    <input type="text" class="input_fill" name="lname" placeholder="Last Name" required />
+                </div>
+                <div class="form_row">
+                    <label for="mobile_number">Mobile No. : </label>
+                    <input type="number" class="input_fill" name="mob" placeholder="Mobile No." required />
+                </div>
+                <div class="form_row">
+                    <label for="email">E-Mail ID : </label>
+                    <input type="email" class="input_fill" name="email" placeholder="E-Mail ID" required />
+                </div>
+                <div class="form_row">
+                    <label for="dob">Stuudent Date of Birth :</label>
+                    <input type="date" name="date" class="input_fill" required />
+                </div>
+                <div class="form_row">
+                    <label for="category">Category : </label>
+                    <Select>
+                        <option value="-- Select Category --">-- Select Category --</option>
+                        <option value="gen">General</option>
+                        <option value="obc">O.B.C</option>
+                        <option value="sc">S.C.</option>
+                        <option value="st">S.T.</option>
+                    </Select>
+                </div>
+                <div class="form_row">
+                    <label for="sex">Gender : </label>
+                    <input type="radio" class="input_radio" name="sex"><span> Male</span>
+                    <input type="radio" class="input_radio" name="sex"><span> Female</span>
+                    <input type="radio" class="input_radio" name="sex"><span> Other</span>
+                </div>
+                <div class="form_row">
+                    <label for="college">Your College Name : </label>
+                    <input type="text" class="input_fill" name="college" placeholder="College Name" required />
+                </div>
+                <div class="form_row">
+                    <label for="address">Your Address : </label>
+                    <input type="text" class="input_fill" name="city" placeholder="Distic / City" required />
+                    <input type="text" class="input_fill" name="village" placeholder="Village / Town">
+                </div>
+                <div class="form_row">
+                    <label for="pincode">Pincode : </label>
+                    <input type="number" class="input_fill" name="pincode" placeholder="Pincode" required />
+                </div>
+                <div class="form_row">
+                    <label for="file">Your Profile Photo : </label>
+                    <input type="file" class="input_file" name="file" required />
+                </div>
+                <div class="form_row">
+                    <label for="file">Training Letter : </label>
+                    <input type="file" class="input_file" name="file" required />
+                </div>
+                <div class="form_row">
+                    <label for="file">Last Semester Marksheet : </label>
+                    <input type="file" class="input_file" name="file" required />
+                </div>
+                <div class="form_row">
+                    <label for="file">High School Marksheet : </label>
+                    <input type="file" class="input_file" name="file" required />
+                </div>
+                <div class="form_row">
+                    <label for="hobby">Student Hobby : </label>
+                    <textarea name="hobby" class="input_fill" cols="30" rows="1"></textarea>
+                </div>
+                <div class="form_row">
+                    <label for="linkedin">Your Linked In URL : </label>
+                    <input type="url" name="linkedin" class="input_fill" />
+                </div>
+                <div class="form_row">
+                    <input type="checkbox" name="check" required />
+                    <label for="checkbox">I agree, all details are true, and I fill it carefully.</label>
+                </div>
+                <div class="form_row">
+                    <input type="submit" class="input_button" value="Submit" />
+                    <input type="reset" class="input_button" value="Reset" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
