@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Pad | Gopi Chandra</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .Ludo_box {
+            height: 1500px;
+            width: 1500px;
+            border: 10px solid #000 !important;
+            margin: 50px;
+        }
+
+        .Ludo_box>.ltp,
+        .Ludo_box>.lbp {
+            height: 600px;
+            width: 1500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Ludo_box>.lcp {
+            height: 300px;
+            width: 1500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #player1 {
+            height: 300px;
+            width: 300px;
+            border: 100px solid #f00 !important;
+            padding: 50px;
+        }
+
+        #player1>.div_red {
+            margin: 15px 5px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #player1>.div_red>.red_square {
+            height: 100px;
+            width: 100px;
+            background-color: #f00;
+            border-radius: 50px;
+        }
+
+        .path_vertical {
+            height: 600px;
+            width: 300px;
+        }
+
+        .path_vertical>.row_pv {
+            height: 100px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .path_vertical>.row_pv>div {
+            height: 90px;
+            width: 90px;
+            border: 5px solid #000 !important;
+        }
+
+        .path_vertical>.row_pv>.bg_red {
+            background-color: #f00;
+        }
+
+        .path_vertical>.row_pv>.bg_green {
+            background-color: #0f0;
+        }
+
+        .path_vertical>.row_pv>.bg_yellow {
+            background-color: #ff0;
+        }
+
+        .path_vertical>.row_pv>.bg_blue {
+            background-color: #00f;
+        }
+
+        #player2 {
+            height: 300px;
+            width: 300px;
+            border: 100px solid #0f0 !important;
+            padding: 50px;
+        }
+
+        #player2>.div_green {
+            margin: 15px 5px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #player2>.div_green>.green_square {
+            height: 100px;
+            width: 100px;
+            background-color: #0f0;
+            border-radius: 50px;
+        }
+
+        .path_horizontal {
+            height: 300px;
+            width: 600px;
+        }
+
+        .path_horizontal>.row_ph {
+            height: 100px;
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .path_horizontal>.row_ph>div {
+            height: 90px;
+            width: 90px;
+            border: 5px solid #000 !important;
+        }
+
+        .path_horizontal>.row_ph>.bg_red {
+            background-color: #f00;
+        }
+
+        .path_horizontal>.row_ph>.bg_green {
+            background-color: #0f0;
+        }
+
+        .path_horizontal>.row_ph>.bg_yellow {
+            background-color: #ff0;
+        }
+
+        .path_horizontal>.row_ph>.bg_blue {
+            background-color: #00f;
+        }
+        svg{
+            height: 300px;
+            width: 300px;
+        }
+
+        .st0 {
+            fill: #0f0;
+        }
+
+        .st1 {
+            fill: #00f;
+        }
+
+        .st2 {
+            fill: #f00;
+        }
+
+        .st3 {
+            fill: #ff0;
+        }
+
+        .st4 {
+            fill: none;
+            stroke: #000000;
+            stroke-width: 5;
+            stroke-miterlimit: 10;
+        }
+
+        #player3 {
+            height: 300px;
+            width: 300px;
+            border: 100px solid #00f !important;
+            padding: 50px;
+        }
+
+        #player3>.div_blue {
+            margin: 15px 5px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #player3>.div_blue>.blue_square {
+            height: 100px;
+            width: 100px;
+            background-color: #00f;
+            border-radius: 50px;
+        }
+
+        #player4 {
+            height: 300px;
+            width: 300px;
+            border: 100px solid #ff0 !important;
+            padding: 50px;
+        }
+
+        #player4>.div_yellow {
+            margin: 15px 5px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #player4>.div_yellow>.yellow_square {
+            height: 100px;
+            width: 100px;
+            background-color: #ff0;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hello, I am Gopi Chandra! -->
+    <!-- Today i create Ludo using Div Tags! -->
+    <!-- I did many mistakes when I start making this. -->
+    <!-- It is 3 Hours of hard work! -->
+    <div class="Ludo_box">
+        <div class="ltp">
+            <div id="player1">
+                <div class="div_red">
+                    <div class="red_square"></div>
+                    <div class="red_square"></div>
+                </div>
+                <div class="div_red">
+                    <div class="red_square"></div>
+                    <div class="red_square"></div>
+                </div>
+            </div>
+            <div class="path_vertical pmt">
+                <div class="row_pv">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_green"></div>
+                    <div class="bg_green"></div>
+                </div>
+                <div class="row_pv">
+                    <div class="bg_red"></div>
+                    <div class="bg_green"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_green"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_green"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_green"></div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="player2">
+                <div class="div_green">
+                    <div class="green_square"></div>
+                    <div class="green_square"></div>
+                </div>
+                <div class="div_green">
+                    <div class="green_square"></div>
+                    <div class="green_square"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lcp">
+            <div class="path_horizontal">
+                <div class="row_ph">
+                    <div></div>
+                    <div class="bg_red"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row_ph">
+                    <div></div>
+                    <div class="bg_red"></div>
+                    <div class="bg_red"></div>
+                    <div class="bg_red"></div>
+                    <div class="bg_red"></div>
+                    <div class="bg_red"></div>
+                </div>
+                <div class="row_ph">
+                    <div></div>
+                    <div></div>
+                    <div class="bg_blue"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- Using SVG for design center of the Ludo -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                <g>
+                    <polygon class="st0" points="150,150 300,3.09 0,3.09 	" />
+                    <polygon class="st1" points="150,150 0,297.21 300,297.21 	" />
+                    <polygon class="st2" points="150,150 3.09,0 3.09,300 	" />
+                    <polygon class="st3" points="150,150 297.21,300 297.21,0 	" />
+                    <line class="st4" x1="297.5" y1="2.5" x2="2.5" y2="297.5" />
+                    <line class="st4" x1="297.5" y1="297.5" x2="2.5" y2="2.5" />
+                    <rect x="2.5" y="2.5" class="st4" width="295" height="295" />
+                </g>
+            </svg>
+            <div class="path_horizontal">
+                <div class="row_ph">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="bg_green"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row_ph">
+                    <div class="bg_yellow"></div>
+                    <div class="bg_yellow"></div>
+                    <div class="bg_yellow"></div>
+                    <div class="bg_yellow"></div>
+                    <div class="bg_yellow"></div>
+                    <div></div>
+                </div>
+                <div class="row_ph">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="bg_yellow"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="lbp">
+            <div id="player3">
+                <div class="div_blue">
+                    <div class="blue_square"></div>
+                    <div class="blue_square"></div>
+                </div>
+                <div class="div_blue">
+                    <div class="blue_square"></div>
+                    <div class="blue_square"></div>
+                </div>
+            </div>
+            <div class="path_vertical">
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_blue"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_blue"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_blue"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div class="bg_blue"></div>
+                    <div class="bg_yellow"></div>
+                </div>
+                <div class="row_pv">
+                    <div class="bg_blue"></div>
+                    <div class="bg_blue"></div>
+                    <div></div>
+                </div>
+                <div class="row_pv">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="player4">
+                <div class="div_yellow">
+                    <div class="yellow_square"></div>
+                    <div class="yellow_square"></div>
+                </div>
+                <div class="div_yellow">
+                    <div class="yellow_square"></div>
+                    <div class="yellow_square"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
